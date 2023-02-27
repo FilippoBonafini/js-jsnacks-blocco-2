@@ -19,10 +19,12 @@ let cognomi = [
 const fullNameList =[];
 
 for(let i= 0; i < 3; i++){
+
     const num1 = Math.floor(Math.random() * nomi.length);
     const num2 = Math.floor(Math.random() * cognomi.length);
-    console.log (nomi[num1]+' '+cognomi[num2]);
+
     const newName = `${nomi[num1]} ${cognomi[num2]}`;
+    
     fullNameList.push(newName);
 }
 
