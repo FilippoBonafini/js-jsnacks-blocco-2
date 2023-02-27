@@ -17,10 +17,8 @@ let cognomi = [
 ];
 
 
-
 for(let i= 0; i < 3; i++){
     let num1 = Math.floor(Math.random() * nomi.length);
-
     let num2 = Math.floor(Math.random() * cognomi.length);
     console.log (nomi[num1]+' '+cognomi[num2]);
 }
