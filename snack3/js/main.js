@@ -1,8 +1,5 @@
 'use strict';
 
-//  JSsnack2
-// Inserisci un numero, se è pari stampa il numero,
-// se è dispari stampa il numero successivo
 
 const numberoUtente1 = document.getElementById("input1");
 const numberoUtente2= document.getElementById("input2");
@@ -17,3 +14,21 @@ buttone.addEventListener('click',
 function(){
     result.innerHTML=(Number(numberoUtente1.value) + Number(numberoUtente2.value) + Number(numberoUtente3.value) + Number(numberoUtente4.value) + Number(numberoUtente5.value));
 })
+
+
+
+let sum = 0;
+
+let count = 1;
+while(count <= 5){
+
+    const input = Number(prompt('Inserisci il numero '+count));
+    console.log(input);
+
+    if(!isNaN(input)){
+        sum+=input;
+        count++;
+    }
+}
+
+alert(sum)
